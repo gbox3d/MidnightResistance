@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>midnight resistance (c)2014</title>
+
+    <script src='../../../engine/Ramb3D/libs/jquery-2.0.3.min.js'></script>
+
+    <script src='../../../engine/Ramb3D/libs/threejs/three.js'></script>
+    <script src='../../../engine/Ramb3D/libs/threejs/CSS3DRenderer.js'></script>
+
+    <script src="../../../engine/Ramb3D/libs/ramb3d/core.js"></script>
+
+    <link rel="stylesheet" href="../../libs/css/mklib.css">
+    <script type="text/javascript" src="../../libs/js/iscroll.js"></script>
+    <script src="../../libs/js/core.js"></script>
+
+</head>
+<body>
+
+
+<div class="mk-page" id="page-home" >
+
+    <div class="mk-header"><a>Midnight Resistance</a></div>
+
+    <div class="mk-content" >
+
+
+        <div style="position: absolute;
+        top:10%;
+        width: 160px;
+        left: 50%;
+        " >
+
+           <img src="icon512.png" style="position: absolute;
+           left: -50%;
+           width: 100%;
+           -webkit-border-radius: 64px;
+           -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent, transparent 30%, white 95%);
+           " >
+
+        </div>
+
+
+        <!--버튼 구룹 -->
+        <div style="width: 160px;height: 100px;
+        position: absolute;bottom: 20px;left: 50%;
+        /*border: 1px solid;*/
+        " >
+
+            <div style="position: absolute;
+            width: 100%;
+            left: -80px;
+            " >
+                <div id="btn-intro" class="mk-ui-btn" > <span class="mk-ui-btn-inner" >소개</span> </div>
+
+                <div id="btn-resistance" class="mk-ui-btn" > <span class="mk-ui-btn-inner" >저항 읽기</span>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <!--<div id="btn-video" class="mk-ui-btn"style="border-bottom: 100px;"> <span class="mk-ui-btn-inner" >저항 강의</span> </div>-->
+
+    </div>
+
+    <div class="mk-footer">
+        <!--Copyright (c)Goorume factory-->
+    </div>
+
+
+</div>
+
+<div class="mk-page" id="page-intro" style="display: none" >
+
+    <div class="mk-header">
+        <div class="mk-ui-backButton" >Home</div>
+        <a>Intro</a></div>
+
+    <div class="mk-content" >
+
+        <div style="
+        text-align: center;/* 이미지태그는 텍스트와 같이 먹는다. */
+        margin : 30px auto; width: 80%;">
+
+            <img src="intro.png" style="
+            -webkit-border-radius: 64px;
+            width: 100%" >
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="mk-footer"></div>
+
+</div>
+
+<div class="mk-page" id="page-regsistance-reader" style="display: none" >
+
+    <div class="mk-header">
+        <div class="mk-ui-backButton" >Home</div>
+        <a>저항읽기</a></div>
+
+    <div class="mk-content" >
+        <div class="container-slot" style="width: 100%;height: 100%; margin:auto;background-color: #ff0000;" ></div>
+
+        <div style="position: absolute;left: 50%;top : 10%;z-index: 100;" >
+
+            <div class="text-result" style="
+            line-height: 64px;
+            text-align: center;
+            font-size: 16px;
+            position: absolute;width:160px;height: 64px;left: -80px; background-color: green;color: #ffffff" ></div>
+
+        </div>
+
+    </div>
+
+    <div class="mk-footer"></div>
+
+</div>
+
+
+<div class="mk-page" id="page-video" style="display: none" >
+
+    <div class="mk-header">
+        <div class="mk-ui-menuButton" >Home</div>
+        <a>저항 강의</a></div>
+
+    <div class="mk-content" >
+
+        <div class="mk-scroller">
+            <ul>
+                <li>전자기학 강좌</li>
+                <li>양자역학</li>
+                <li>우주의 신비 </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="mk-footer"></div>
+
+
+</div>
+
+
+<script src="app.js"></script>
+<script src="solt.js"></script>
+
+
+
+
+</body>
+</html>
